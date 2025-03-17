@@ -42,7 +42,7 @@ const SorrisoAtivo = () => {
         <Text style={styles.missionReward}>Recompensa: 25 pontos</Text>
         <Text style={styles.missionStatus}>Status: Não concluída</Text>
         <Text style={styles.missionTime}>Tempo restante: 13h54m40s</Text>
-        <TouchableOpacity style={styles.missionButton} onPress={ () => navigation.navigate('Missoes')}>
+        <TouchableOpacity style={styles.missionButton} onPress={ () => navigation.navigate('RealizarMissao')}>
           <Text style={styles.missionButtonText}>Realizar Missão</Text>
         </TouchableOpacity>
       </View>
@@ -53,7 +53,7 @@ const SorrisoAtivo = () => {
         <Text style={styles.missionReward}>Recompensa: 500 pontos</Text>
         <Text style={styles.missionStatus}>Status: Não concluída</Text>
         <Text style={styles.missionTime}>Tempo restante: 24 dias</Text>
-        <TouchableOpacity style={styles.missionButton}>
+        <TouchableOpacity style={styles.missionButton} onPress={ () => navigation.navigate('RealizarMissao')}>
           <Text style={styles.missionButtonText}>Realizar Missão</Text>
         </TouchableOpacity>
       </View>

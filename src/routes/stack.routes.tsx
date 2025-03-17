@@ -6,6 +6,7 @@ import SignUp from "../pages/SignUp";
 import Home from "../pages/Home";
 import Missoes from "../pages/Missoes";
 import SorrisoAtivo from "../pages/SorrisoAtivo";
+import RealizarMissao from "../pages/RealizarMissao";
 import TrocarPontos from "../pages/TrocarPontos"
 
 // Defina o tipo StackParamList
@@ -16,6 +17,7 @@ export type StackParamList = {
     SorrisoAtivo: undefined;
     Missoes: undefined;
     TrocarPontos: undefined;
+    RealizarMissao: undefined;
   };
   
   const Stack = createNativeStackNavigator<StackParamList>();
@@ -68,6 +70,14 @@ function StackRoutes(){
                     },
                     headerTintColor: '#fff', 
                     headerTitle: 'Sorriso Ativo - Trocar Pontos',
+                    headerTitleAlign: 'center'}} />
+
+            <Stack.Screen name="RealizarMissao" component={RealizarMissao}
+                options={{headerStyle: {
+                    backgroundColor: '#007AFF', 
+                    },
+                    headerTintColor: '#fff', 
+                    headerTitle: 'Sorriso Ativo - Realizar Missão',
                     headerTitleAlign: 'center'}} />
             </Stack.Navigator>
     );
