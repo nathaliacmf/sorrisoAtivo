@@ -43,7 +43,7 @@ const activeMissions: Mission[] = [
   },
 ];
 
-const MissionScreen: React.FC = () => {
+export default function Missoes() {
   // Função para renderizar uma missão na lista
   const renderMission = ({ item }: { item: Mission }) => (
     <View style={styles.missionCard}>
@@ -74,7 +74,7 @@ const MissionScreen: React.FC = () => {
       <FlatList data={activeMissions} renderItem={renderMission} keyExtractor={(item) => item.id} />
     </View>
   );
-};
+}
 
 // Estilos da tela
 const styles = StyleSheet.create({
@@ -148,5 +148,3 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
 });
-
-export default MissionScreen;

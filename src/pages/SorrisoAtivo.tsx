@@ -6,7 +6,7 @@ import { useNavigation } from "@react-navigation/native";
 
 import MissoesSorrisoAtivo from "../components/MissoesSorrisoAtivo"; // Importando o novo componente
 
-const SorrisoAtivo = () => {
+export default function SorrisoAtivo() {
   type NavigationProps = NativeStackNavigationProp<StackParamList, "Home">;
   const navigation = useNavigation<NavigationProps>();
 
@@ -32,7 +32,7 @@ const SorrisoAtivo = () => {
       <MissoesSorrisoAtivo />
     </ScrollView>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -86,4 +86,3 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SorrisoAtivo;

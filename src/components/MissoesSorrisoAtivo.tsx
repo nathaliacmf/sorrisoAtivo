@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   missionTitleLink: {
     fontSize: 18,
     fontWeight: "bold",
-    color: "#007AFF", // Azul padrão de links
+    color: "#007AFF", 
     marginBottom: 10,
   },
   missionCard: {

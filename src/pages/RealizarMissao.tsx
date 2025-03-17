@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import { 
-  View, Text, TouchableOpacity, Image, StyleSheet 
-} from "react-native";
+import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import { useNavigation } from "@react-navigation/native";
 
-const RealizarMissao = () => {
+export default function RealizarMissao() {
   const [image, setImage] = useState<string | null>(null);
   const navigation = useNavigation();
 
@@ -25,11 +23,8 @@ const RealizarMissao = () => {
   return (
     <View style={styles.container}>
       
-
-      {/* Descrição */}
       <Text style={styles.takePhotoText}>Tirar Foto</Text>
 
-      {/* Área de imagem que funciona como botão */}
       <TouchableOpacity style={styles.imageContainer} onPress={pickImage}>
         {image ? (
           <Image source={{ uri: image }} style={styles.image} />
@@ -38,14 +33,13 @@ const RealizarMissao = () => {
         )}
       </TouchableOpacity>
 
-      {/* Botão de enviar foto */}
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Enviar Foto</Text>
       </TouchableOpacity>
 
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -119,5 +113,3 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   }
 });
-
-export default RealizarMissao;
