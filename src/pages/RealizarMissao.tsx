@@ -9,7 +9,7 @@ export default function RealizarMissao() {
 
   const pickImage = async () => {
     let result = await ImagePicker.launchCameraAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.Images,
+      mediaTypes: ImagePicker.MediaTypeOptions.Images, // Alteração aqui para usar MediaTypeOptions.Images
       allowsEditing: true,
       aspect: [4, 3],
       quality: 1,
@@ -22,7 +22,6 @@ export default function RealizarMissao() {
 
   return (
     <View style={styles.container}>
-      
       <Text style={styles.takePhotoText}>Tirar Foto</Text>
 
       <TouchableOpacity style={styles.imageContainer} onPress={pickImage}>
@@ -36,7 +35,6 @@ export default function RealizarMissao() {
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Enviar Foto</Text>
       </TouchableOpacity>
-
     </View>
   );
 }
@@ -111,5 +109,5 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginVertical: 10,
     fontWeight: "bold",
-  }
+  },
 });
