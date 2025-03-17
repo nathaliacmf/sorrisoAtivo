@@ -1,115 +1,96 @@
-import React, { useState } from "react";
-import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
-import * as ImagePicker from "expo-image-picker";
-import { useNavigation } from "@react-navigation/native";
+import React from "react-native";
+import { Platform } from "react-native";
 
-export default function RealizarMissao() {
-  const [image, setImage] = useState<string | null>(null);
-  const navigation = useNavigation();
+import { View, Text, StyleSheet, Image, TextInput, KeyboardAvoidingView, TouchableOpacity } from 'react-native';
 
-  const pickImage = async () => {
-    let result = await ImagePicker.launchCameraAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.Images,
-      allowsEditing: true,
-      aspect: [4, 3],
-      quality: 1,
-    });
+import { useNavigation } from '@react-navigation/native';
+import { StackParamList } from '../routes/stack.routes';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
-    if (!result.canceled && result.assets.length > 0) {
-      setImage(result.assets[0].uri);
-    }
-  };
+export default function SignIn() {
+    type NavigationProps = NativeStackNavigationProp<StackParamList, 'SignIn'>;
+    const navigation = useNavigation<NavigationProps>();;
+    return (
+        <View style={styles.background}>
+            <KeyboardAvoidingView style={styles.container}
+            behavior={Platform.OS === "ios" ? "padding" : undefined}
+            enabled>
+                
+            <Image source={require('../assets/image.png')} 
+            style={{marginBottom: 15, height: 105, width: 200}}
+            />
 
-  return (
-    <View style={styles.container}>
-      
-      <Text style={styles.takePhotoText}>Tirar Foto</Text>
+            <View style={styles.areaInput}>
+                <TextInput
+                style={styles.input}
+                placeholder="Email"
+                placeholderTextColor="#888" 
+                />
+            </View>
 
-      <TouchableOpacity style={styles.imageContainer} onPress={pickImage}>
-        {image ? (
-          <Image source={{ uri: image }} style={styles.image} />
-        ) : (
-          <Text style={styles.placeholderText}>Foto</Text>
-        )}
-      </TouchableOpacity>
+            <View style={styles.areaInput}>
+                <TextInput
+                style={styles.input}
+                placeholder="Senha"
+                placeholderTextColor="#888" 
+                />
+            </View>
 
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Enviar Foto</Text>
-      </TouchableOpacity>
+            <TouchableOpacity style={styles.submitButton} activeOpacity={0.7} onPress={ () => navigation.navigate('Home')}>
+                <Text style={styles.submitText}>Acessar Conta</Text>
+                
+            </TouchableOpacity>
 
-    </View>
-  );
+            <TouchableOpacity style={styles.link} onPress={ () => navigation.navigate('SignUp')}>
+                <Text style={styles.linkText}>Crie uma conta!</Text>
+            </TouchableOpacity>
+
+            </KeyboardAvoidingView>
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-    backgroundColor: "#fff",
-  },
-  header: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#1976D2",
-    paddingVertical: 15,
-    paddingHorizontal: 10,
-    borderTopLeftRadius: 10,
-    borderTopRightRadius: 10,
-  },
-  backButton: {
-    marginRight: 10,
-  },
-  backText: {
-    color: "#fff",
-    fontSize: 20,
-    fontWeight: "bold",
-  },
-  headerText: {
-    color: "#fff",
-    fontSize: 16,
-    fontWeight: "bold",
-  },
-  description: {
-    marginTop: 10,
-    fontSize: 25,
-    textAlign: "center",
-    color: "#007AFF",
-  },
-  imageContainer: {
-    width: "100%",
-    height: 500,
-    borderWidth: 1,
-    borderColor: "#ccc",
-    justifyContent: "center",
-    alignItems: "center",
-    marginVertical: 10,
-  },
-  placeholderText: {
-    color: "#aaa",
-    fontSize: 16,
-  },
-  image: {
-    width: "100%",
-    height: "100%",
-  },
-  button: {
-    backgroundColor: "#4CAF50",
-    padding: 15,
-    paddingTop: 15,
-    borderRadius: 15,
-    alignItems: "center",
-    marginTop: 25,
-  },
-  buttonText: {
-    color: "#fff",
-    fontSize: 16,
-    fontWeight: "bold",
-  },
-  takePhotoText: {
-    color: "#1976D2",
-    fontSize: 16,
-    textAlign: "center",
-    marginVertical: 10,
-    fontWeight: "bold",
-  }
-});
+    background: {
+      flex: 1,
+      backgroundColor: '#F0F4FF',
+    },
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    areaInput:{
+        flexDirection: 'row',
+    },
+    input:{
+        backgroundColor: '#FFF',
+        width: "90%",
+        fontSize: 17,
+        padding: 10,
+        borderRadius: 8,
+        color: '#121212',
+        marginBottom: 15
+    },
+    submitButton:{
+        width: "90%",
+        height: 45,
+        borderRadius: 8,
+        backgroundColor: '#3b3dbf',
+        marginTop: 10,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    submitText:{
+        fontSize: 20,
+        color: '#FFF',
+    },
+    link:{
+        marginTop: 10,
+        marginBottom: 10,
+    },
+    linkText:{
+        color: '#171717',
+        justifyContent: 'center'
+    }
+  });

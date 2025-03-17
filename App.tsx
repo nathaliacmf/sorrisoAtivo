@@ -1,10 +1,7 @@
+import React from 'react';
 import { StatusBar } from 'react-native';
-
-import React from 'react-native';
-
 import { NavigationContainer } from '@react-navigation/native';
-import StackRoutes from './src/routes';
-
+import StackRoutes from './src/routes/stack.routes';
 
 export default function App() {
   return (
@@ -14,6 +11,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-
-
