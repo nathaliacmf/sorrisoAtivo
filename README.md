@@ -32,8 +32,7 @@ Aqui você pode explicar mais sobre o projeto, o que ele resolve, e qual problem
 
 ## Como Usar
 
-1. Faça um clone do repositório:
-   git clone [https://github.com/usuário/nome-do-repositório.git](https://github.com/nathaliacmf/Sorriso_Ativo-Odontoprev)
+1. Faça um clone do repositório
 2. Abrir o código
    code .
 3. Baixar as dependências para rodar o projeto
