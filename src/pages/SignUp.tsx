@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
-import { Platform } from "react-native";
 
-import { View, Text, StyleSheet, TextInput, KeyboardAvoidingView, TouchableOpacity, Image } from 'react-native';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { StackParamList } from '../routes/stack.routes';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -21,9 +20,6 @@ export default function SignIn() {
 
     return (
         <View style={styles.background}>
-            <KeyboardAvoidingView style={styles.container}
-            behavior={Platform.OS === "ios" ? "padding" : undefined}
-            enabled>
 
             <Image source={require('../assets/image.png')} 
                 style={{marginBottom: 15, height: 105, width: 200}}
@@ -58,7 +54,6 @@ export default function SignIn() {
                 
             </TouchableOpacity>
 
-            </KeyboardAvoidingView>
         </View>
     );
 }
