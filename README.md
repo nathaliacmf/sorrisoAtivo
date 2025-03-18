@@ -2,6 +2,12 @@
 
 O Sorriso Ativo é uma funcionalidade para o nosso aplicativo de sistema de recompensas para a Odontoprev.
 
+##Membros
+
+Ellie de Oliveira - RM552824
+Ives Jundi Chiba - RM553243
+Nathalia Comeron Freire - RM553233
+
 ## Índice
 
 - [Sobre](#sobre)
