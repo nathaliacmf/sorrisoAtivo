@@ -1,7 +1,7 @@
 import React from "react-native";
 
 
-import { View, Text, StyleSheet, Image, TextInput, KeyboardAvoidingView, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 import { StackParamList } from '../routes/stack.routes';
