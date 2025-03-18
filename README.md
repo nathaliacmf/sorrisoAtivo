@@ -21,7 +21,7 @@ Aqui você pode explicar mais sobre o projeto, o que ele resolve, e qual problem
 ## Telas
 
 - **Tela de Login**
-  ![image](https://web.whatsapp.com/1c105924-9044-4a20-9afc-4058b0eb6e38)
+  ![image]
 
 - **Tela de Cadastro**
 - **Home**
