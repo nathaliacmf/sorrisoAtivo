@@ -4,9 +4,9 @@ O Sorriso Ativo é uma funcionalidade para o nosso aplicativo de sistema de reco
 
 Membros
 
-Ellie de Oliveira - RM552824
-Ives Jundi Chiba - RM553243
-Nathalia Comeron Freire - RM553233
+- Ellie de Oliveira - RM552824
+- Ives Jundi Chiba - RM553243
+- Nathalia Comeron Freire - RM553233
 
 ## Índice
 
