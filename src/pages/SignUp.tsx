@@ -6,7 +6,6 @@ import { useNavigation } from '@react-navigation/native';
 import { StackParamList } from '../routes/stack.routes';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
-import Home from "../pages/Home";
 
 export default function SignIn() {
     

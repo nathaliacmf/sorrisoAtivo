@@ -10,9 +10,6 @@ export default function MissoesSorrisoAtivo() {
 
   return (
     <View>
-      <TouchableOpacity onPress={() => navigation.navigate("Missoes")}>
-        <Text style={styles.missionTitleLink}>Missões {'>'}</Text>
-      </TouchableOpacity>
 
       {/* Missão 1 */}
       <View style={styles.missionCard}>
@@ -42,12 +39,6 @@ export default function MissoesSorrisoAtivo() {
 }
 
 const styles = StyleSheet.create({
-  missionTitleLink: {
-    fontSize: 18,
-    fontWeight: "bold",
-    color: "#007AFF", 
-    marginBottom: 10,
-  },
   missionCard: {
     backgroundColor: "#fff",
     padding: 15,

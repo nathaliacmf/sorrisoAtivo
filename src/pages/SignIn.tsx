@@ -1,5 +1,5 @@
 import React from "react-native";
-import { Platform } from "react-native";
+
 
 import { View, Text, StyleSheet, Image, TextInput, KeyboardAvoidingView, TouchableOpacity } from 'react-native';
 
@@ -12,9 +12,6 @@ export default function SignIn() {
     const navigation = useNavigation<NavigationProps>();;
     return (
         <View style={styles.background}>
-            <KeyboardAvoidingView style={styles.container}
-            behavior={Platform.OS === "ios" ? "padding" : undefined}
-            enabled>
                 
             <Image source={require('../assets/image.png')} 
             style={{marginBottom: 15, height: 105, width: 200}}
@@ -45,7 +42,6 @@ export default function SignIn() {
                 <Text style={styles.linkText}>Crie uma conta!</Text>
             </TouchableOpacity>
 
-            </KeyboardAvoidingView>
         </View>
     );
 }
@@ -76,7 +72,7 @@ const styles = StyleSheet.create({
         width: "90%",
         height: 45,
         borderRadius: 8,
-        backgroundColor: '#3b3dbf',
+        backgroundColor: '#007AFF',
         marginTop: 10,
         justifyContent: 'center',
         alignItems: 'center'

@@ -4,7 +4,11 @@ import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { StackParamList } from "../routes/stack.routes";
 import { useNavigation } from "@react-navigation/native";
 
-import MissoesSorrisoAtivo from "../components/MissoesSorrisoAtivo"; // Importando o novo componente
+
+import Missoes from "./Missoes";
+import MissoesSorrisoAtivo from "../components/MissoesSorrisoAtivo";
+
+
 
 export default function SorrisoAtivo() {
   type NavigationProps = NativeStackNavigationProp<StackParamList, "Home">;
@@ -22,14 +26,19 @@ export default function SorrisoAtivo() {
       <Text style={styles.pointsUnit}>pontos</Text>
 
       <View style={styles.progressContainer}>
-        <Text style={styles.progressText}>1250 pontos até a próxima recompensa</Text>
+        <Text style={styles.progressText}>6000 pontos até a próxima recompensa</Text>
       </View>
 
       <TouchableOpacity style={styles.exchangeButton} onPress={() => navigation.navigate("TrocarPontos")}>
         <Text style={styles.exchangeText}>Trocar Pontos {'>'}</Text>
       </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate("Missoes")}>
+              <Text style={styles.missionTitleLink}>Missões {'>'}</Text>
+            </TouchableOpacity>
 
-      <MissoesSorrisoAtivo />
+      <ScrollView>
+        <MissoesSorrisoAtivo/>
+      </ScrollView>
     </ScrollView>
   );
 }
@@ -84,5 +93,11 @@ const styles = StyleSheet.create({
     color: "#007AFF",
     fontWeight: "bold",
   },
+  missionTitleLink: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#007AFF", 
+    marginBottom: 10,
+  }
 });
 

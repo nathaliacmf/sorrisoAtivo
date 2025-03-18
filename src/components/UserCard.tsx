@@ -3,19 +3,20 @@ import { View, Text, StyleSheet } from "react-native";
 
 export default function UserCard() {
   return (
-    <View>
-      {/* Nome do Usuário */}
-      <View style={styles.userInfo}>
+    <View style={styles.container}>
+      {/* Header */}
+      <View style={styles.header}>
         <Text style={styles.userName}>Olá, Fulano Ciclano</Text>
         <Text style={styles.protocol}>Protocolo de atendimento: 000000000000000</Text>
       </View>
 
       {/* Carteirinha Digital */}
-      <View style={styles.card}>
+      <View style={styles.cardContainer}>
         <Text style={styles.cardTitle}>Carteirinha digital</Text>
-        <View style={styles.cardContent}>
+        <View style={styles.card}>
           <Text style={styles.cardUser}>Fulano Ciclano</Text>
           <Text style={styles.cardCompany}>Empresa</Text>
+          <View style={styles.separator} />
           <Text style={styles.cardPlan}>Plano Básico III</Text>
           <Text style={styles.cardDetails}>Número: 000000000000</Text>
           <Text style={styles.cardDetails}>CNS: 000000000000000</Text>
@@ -26,36 +27,36 @@ export default function UserCard() {
 }
 
 const styles = StyleSheet.create({
-  userInfo: {
+  container: {
+    flex: 1,
+    backgroundColor: "#f0f4f7",
+  },
+  header: {
     padding: 15,
     backgroundColor: "#007AFF",
   },
   userName: {
     fontSize: 18,
     fontWeight: "bold",
-    backgroundColor: "#007AFF",
-    color: 'white',
+    color: "white",
   },
   protocol: {
     fontSize: 14,
-    color: 'white',
-    fontWeight: 'bold'
+    color: "white",
+    fontWeight: "bold",
   },
-  card: {
-    backgroundColor: "white",
+  cardContainer: {
     margin: 15,
-    padding: 15,
-    borderRadius: 10,
   },
   cardTitle: {
     fontSize: 16,
     fontWeight: "bold",
-    marginBottom: 10,
     color: "#007AFF",
+    marginBottom: 10,
   },
-  cardContent: {
+  card: {
     backgroundColor: "#007AFF",
-    borderRadius: 8,
+    borderRadius: 10,
     padding: 15,
   },
   cardUser: {
@@ -67,11 +68,16 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 14,
   },
+  separator: {
+    height: 1,
+    backgroundColor: "white",
+    marginVertical: 10,
+    opacity: 0.5,
+  },
   cardPlan: {
     color: "white",
     fontSize: 16,
     fontWeight: "bold",
-    marginTop: 5,
   },
   cardDetails: {
     color: "white",
