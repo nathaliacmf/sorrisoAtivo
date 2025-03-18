@@ -21,8 +21,6 @@ Aqui você pode explicar mais sobre o projeto, o que ele resolve, e qual problem
 ## Telas
 
 - **Tela de Login**
-  ![image]
-
 - **Tela de Cadastro**
 - **Home**
 - **Sorriso Ativo**
