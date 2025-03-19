@@ -45,34 +45,6 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: "#fff",
   },
-  header: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#1976D2",
-    paddingVertical: 15,
-    paddingHorizontal: 10,
-    borderTopLeftRadius: 10,
-    borderTopRightRadius: 10,
-  },
-  backButton: {
-    marginRight: 10,
-  },
-  backText: {
-    color: "#fff",
-    fontSize: 20,
-    fontWeight: "bold",
-  },
-  headerText: {
-    color: "#fff",
-    fontSize: 16,
-    fontWeight: "bold",
-  },
-  description: {
-    marginTop: 10,
-    fontSize: 25,
-    textAlign: "center",
-    color: "#007AFF",
-  },
   imageContainer: {
     width: "100%",
     height: 500,
@@ -93,7 +65,6 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: "#4CAF50",
     padding: 15,
-    paddingTop: 15,
     borderRadius: 15,
     alignItems: "center",
     marginTop: 25,

@@ -14,12 +14,12 @@ export default function UserCard() {
       <View style={styles.cardContainer}>
         <Text style={styles.cardTitle}>Carteirinha digital</Text>
         <View style={styles.card}>
-          <Text style={styles.cardUser}>Fulano Ciclano</Text>
-          <Text style={styles.cardCompany}>Empresa</Text>
+          <Text style={styles.cardTextBold}>Fulano Ciclano</Text>
+          <Text style={styles.cardText}>Empresa</Text>
           <View style={styles.separator} />
-          <Text style={styles.cardPlan}>Plano Básico III</Text>
-          <Text style={styles.cardDetails}>Número: 000000000000</Text>
-          <Text style={styles.cardDetails}>CNS: 000000000000000</Text>
+          <Text style={styles.cardTextBold}>Plano Básico III</Text>
+          <Text style={styles.cardText}>Número: 000000000000</Text>
+          <Text style={styles.cardText}>CNS: 000000000000000</Text>
         </View>
       </View>
     </View>
@@ -59,12 +59,12 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 15,
   },
-  cardUser: {
+  cardTextBold: {
     color: "white",
     fontSize: 18,
     fontWeight: "bold",
   },
-  cardCompany: {
+  cardText: {
     color: "white",
     fontSize: 14,
   },
@@ -73,15 +73,5 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     marginVertical: 10,
     opacity: 0.5,
-  },
-  cardPlan: {
-    color: "white",
-    fontSize: 16,
-    fontWeight: "bold",
-  },
-  cardDetails: {
-    color: "white",
-    fontSize: 14,
-    marginTop: 2,
   },
 });

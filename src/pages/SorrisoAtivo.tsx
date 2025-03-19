@@ -4,11 +4,8 @@ import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { StackParamList } from "../routes/stack.routes";
 import { useNavigation } from "@react-navigation/native";
 
-
-import Missoes from "./Missoes";
 import MissoesSorrisoAtivo from "../components/MissoesSorrisoAtivo";
-
-
+import PontosUsuario from "../components/PontosUsuario";
 
 export default function SorrisoAtivo() {
   type NavigationProps = NativeStackNavigationProp<StackParamList, "Home">;
@@ -21,24 +18,17 @@ export default function SorrisoAtivo() {
         Seus pontos podem ser trocados por prêmios e benefícios exclusivos!
       </Text>
 
-      <Text style={styles.pointsLabel}>Você tem:</Text>
-      <Text style={styles.pointsValue}>0</Text>
-      <Text style={styles.pointsUnit}>pontos</Text>
-
-      <View style={styles.progressContainer}>
-        <Text style={styles.progressText}>6000 pontos até a próxima recompensa</Text>
-      </View>
+      <PontosUsuario />
 
       <TouchableOpacity style={styles.exchangeButton} onPress={() => navigation.navigate("TrocarPontos")}>
         <Text style={styles.exchangeText}>Trocar Pontos {'>'}</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate("Missoes")}>
-              <Text style={styles.missionTitleLink}>Missões {'>'}</Text>
-            </TouchableOpacity>
 
-      <ScrollView>
-        <MissoesSorrisoAtivo/>
-      </ScrollView>
+      <TouchableOpacity onPress={() => navigation.navigate("Missoes")}>
+        <Text style={styles.missionTitleLink}>Missões {'>'}</Text>
+      </TouchableOpacity>
+
+      <MissoesSorrisoAtivo/>
     </ScrollView>
   );
 }
@@ -53,32 +43,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: "#555",
     marginBottom: 20,
-  },
-  pointsLabel: {
-    fontSize: 16,
-    fontWeight: "bold",
-    textAlign: "center",
-    color: "#004AAD",
-  },
-  pointsValue: {
-    fontSize: 32,
-    fontWeight: "bold",
-    textAlign: "center",
-    color: "#004AAD",
-  },
-  pointsUnit: {
-    fontSize: 14,
-    textAlign: "center",
-    color: "#555",
-    marginBottom: 10,
-  },
-  progressContainer: {
-    alignItems: "center",
-    marginBottom: 10,
-  },
-  progressText: {
-    fontSize: 14,
-    color: "#888",
   },
   exchangeButton: {
     backgroundColor: "#fff",
@@ -100,4 +64,3 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   }
 });
-

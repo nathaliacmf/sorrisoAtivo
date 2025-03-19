@@ -2,7 +2,6 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import MissoesSorrisoAtivo from "../components/MissoesSorrisoAtivo";
 
-
 export default function Missoes() {
   return (
     <View style={styles.container}>
@@ -36,9 +35,9 @@ const styles = StyleSheet.create({
     color: "#007AFF", 
   },
   missionsCompleted: {
-    marginBottom: 20, // Adiciona um espaço abaixo de "Missões Concluídas"
+    marginBottom: 20, 
   },
   missionsActive: {
-    marginTop: 20, // Adiciona um espaço acima de "Missões Ativas"
+    marginTop: 20,
   },
 });

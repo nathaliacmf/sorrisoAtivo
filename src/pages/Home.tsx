@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.header}>
-        <View style={styles.headerLeft}>
+        <View style={styles.headerContent}>
           <Ionicons name="heart-outline" size={24} color="white" />
           <Text style={styles.logoText}>odontoprev</Text>
         </View>
-        <View style={styles.headerRight}>
+        <View style={styles.headerContent}>
           <FontAwesome name="user" size={24} color="white" />
         </View>
       </View>
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#007AFF",
     padding: 15,
   },
-  headerLeft: {
+  headerContent: {
     flexDirection: "row",
     alignItems: "center",
   },
@@ -46,9 +46,5 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "bold",
     marginLeft: 8,
-  },
-  headerRight: {
-    flexDirection: "row",
-    alignItems: "center",
   },
 });

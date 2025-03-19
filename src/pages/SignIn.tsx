@@ -1,7 +1,5 @@
-import React from "react-native";
-
-
-import { View, Text, StyleSheet, Image, TextInput, KeyboardAvoidingView, TouchableOpacity } from 'react-native';
+import React from "react";
+import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 import { StackParamList } from '../routes/stack.routes';
@@ -9,67 +7,75 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 export default function SignIn() {
     type NavigationProps = NativeStackNavigationProp<StackParamList, 'SignIn'>;
-    const navigation = useNavigation<NavigationProps>();;
+    const navigation = useNavigation<NavigationProps>();
+
     return (
-        <View style={styles.background}>
-                
-            <Image source={require('../assets/image.png')} 
-            style={{marginBottom: 15, height: 105, width: 200}}
-            />
-
-            <View style={styles.areaInput}>
-                <TextInput
-                style={styles.input}
-                placeholder="Email"
-                placeholderTextColor="#888" 
+        
+            <View style={styles.container}>
+                <Image 
+                    source={require('../assets/image.png')} 
+                    style={styles.logo}
                 />
+
+                <View style={styles.areaInput}>
+                    <TextInput
+                        style={styles.input}
+                        placeholder="Email"
+                        placeholderTextColor="#888" 
+                    />
+                </View>
+
+                <View style={styles.areaInput}>
+                    <TextInput
+                        style={styles.input}
+                        placeholder="Senha"
+                        placeholderTextColor="#888" 
+                        secureTextEntry
+                    />
+                </View>
+
+                <TouchableOpacity 
+                    style={styles.submitButton} 
+                    activeOpacity={0.7} 
+                    onPress={() => navigation.navigate('Home')}
+                >
+                    <Text style={styles.submitText}>Acessar Conta</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.link} onPress={() => navigation.navigate('SignUp')}>
+                    <Text style={styles.linkText}>Crie uma conta!</Text>
+                </TouchableOpacity>
             </View>
-
-            <View style={styles.areaInput}>
-                <TextInput
-                style={styles.input}
-                placeholder="Senha"
-                placeholderTextColor="#888" 
-                />
-            </View>
-
-            <TouchableOpacity style={styles.submitButton} activeOpacity={0.7} onPress={ () => navigation.navigate('Home')}>
-                <Text style={styles.submitText}>Acessar Conta</Text>
-                
-            </TouchableOpacity>
-
-            <TouchableOpacity style={styles.link} onPress={ () => navigation.navigate('SignUp')}>
-                <Text style={styles.linkText}>Crie uma conta!</Text>
-            </TouchableOpacity>
-
-        </View>
     );
 }
 
 const styles = StyleSheet.create({
-    background: {
-      flex: 1,
-      backgroundColor: '#F0F4FF',
-    },
     container: {
         flex: 1,
+        backgroundColor: '#F0F4FF',
         alignItems: 'center',
         justifyContent: 'center',
+        padding: 25,
     },
-    areaInput:{
-        flexDirection: 'row',
+    logo: {
+        marginBottom: 15,
+        height: 105,
+        width: 200,
     },
-    input:{
+    areaInput: {
+        width: "100%",
+    },
+    input: {
         backgroundColor: '#FFF',
-        width: "90%",
+        width: "100%",
         fontSize: 17,
         padding: 10,
         borderRadius: 8,
         color: '#121212',
         marginBottom: 15
     },
-    submitButton:{
-        width: "90%",
+    submitButton: {
+        width: "100%",
         height: 45,
         borderRadius: 8,
         backgroundColor: '#007AFF',
@@ -77,16 +83,16 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
-    submitText:{
+    submitText: {
         fontSize: 20,
         color: '#FFF',
     },
-    link:{
+    link: {
         marginTop: 10,
         marginBottom: 10,
     },
-    linkText:{
+    linkText: {
         color: '#171717',
         justifyContent: 'center'
     }
-  });
+});

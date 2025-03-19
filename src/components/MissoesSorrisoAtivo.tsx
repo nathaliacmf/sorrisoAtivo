@@ -1,16 +1,14 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { StackParamList } from "../routes/stack.routes"; 
 import { useNavigation } from "@react-navigation/native";
 
 export default function MissoesSorrisoAtivo() {
-  type NavigationProps = NativeStackNavigationProp<StackParamList, "Home">;
+  type NavigationProps = NativeStackNavigationProp<any, "Home">; // Adapte o tipo conforme sua rota
   const navigation = useNavigation<NavigationProps>();
 
   return (
     <View>
-
       {/* Missão 1 */}
       <View style={styles.missionCard}>
         <Text style={styles.missionHeader}>📸 Tirar foto escovando os dentes</Text>

@@ -3,7 +3,7 @@ import { View, ActivityIndicator } from 'react-native';
 import Stack from "../routes/stack.routes";
 
 function StackRoutes() {
-    //daqui a pouco isso esta saindo daqui
+    //isto é para as infos dos usuarios ignora por enquanto 
     const loading = false;
     const signed = false;
 
