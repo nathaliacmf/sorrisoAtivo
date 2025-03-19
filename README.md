@@ -13,6 +13,7 @@ O Sorriso Ativo é uma funcionalidade inovadora para o aplicativo da OdontoPrev 
 - [Sobre](#sobre)
 - [Telas](#telas)
 - [Como Usar](#como-usar)
+- [Video](#video)
 
 ## Sobre
 
@@ -32,26 +33,48 @@ O Sorriso Ativo propõe um sistema de recompensas para incentivar os pacientes a
 
 ## Telas
 
-- **Tela de Login**
-![image](https://github.com/user-attachments/assets/749380f7-1a6c-4b6b-b672-60c30f2b0bee)
+# **Tela de Login**
+- Nesta tela teremos a conexão com o firebase 
+![Imagem do WhatsApp de 2025-03-19 à(s) 16 49 37_aae1bb08](https://github.com/user-attachments/assets/01ec0804-87d8-49e3-a4d1-a0a1be554ca6)
 
-- **Tela de Cadastro**
-![image](https://github.com/user-attachments/assets/4ef6ff1c-e5b1-4b8d-a310-815f9e869317)
 
-- **Home**
-![image](https://github.com/user-attachments/assets/373e1d21-e8ba-46e6-9486-5c94aefe8214)
+# **Tela de Cadastro**
+- Nesta tela teremos a conexão com o firebase
+![Imagem do WhatsApp de 2025-03-19 à(s) 16 49 36_cc13d1fa](https://github.com/user-attachments/assets/3f02b034-d5e3-40b2-ab9c-613e7d9743b5)
 
-- **Sorriso Ativo**
-![image](https://github.com/user-attachments/assets/3d761f7d-2d46-482e-b507-3c15fa1cac02)
 
-- **Missões**
-![image](https://github.com/user-attachments/assets/e4d2fa9b-eb14-4c5d-b60e-97eb205ae85d)
+# **Home**
+- No icone do usuario teremos uma futura tela para guardar as informações dos usuarios
+- Na area de "Serviços" são futuras telas que não foram executadas por agora
+- A carteirinha digital ira guardar as informações do usuario pelo login/cadastro
+- Acesso rapido temos a nossa ideia o "Sorriso Aivo" que é a ideia do nosso projeto
+![Imagem do WhatsApp de 2025-03-19 à(s) 16 49 36_209447ba](https://github.com/user-attachments/assets/718524f6-145b-4906-8919-99a906d347a9)
 
-- **Trocar Pontos**
-![image](https://github.com/user-attachments/assets/7adcd3a6-a19a-4b3c-bea2-e84db6fbc982)
 
-- **Realizar Missão**
-![image](https://github.com/user-attachments/assets/1d08b134-4958-4726-8efa-9729e3ca7f1a)
+# **Sorriso Ativo**
+- Esta tela estara conectada com a API sobre os pontos e as missões para aparecer mais missões ou menos dependendo do usuário
+![Imagem do WhatsApp de 2025-03-19 à(s) 16 49 36_d53e49ea](https://github.com/user-attachments/assets/1a113fa4-d3e3-4e47-84e1-afa9bc15435c)
+
+
+# **Missões**
+- Aqui mostrarias as missões que estão conectadas na API e os pontos de cada usuario que vai ser conectado com uma Api tambem
+![Imagem do WhatsApp de 2025-03-19 à(s) 16 49 35_6196a53d](https://github.com/user-attachments/assets/8aca9332-92e8-4a56-9873-8ae863b01d34)
+
+
+# **Trocar Pontos**
+- Ira mostrar os pontos que estão conectados com a API sobre cada usuario
+![Imagem do WhatsApp de 2025-03-19 à(s) 16 49 35_f829cd48](https://github.com/user-attachments/assets/05383b7c-2dc7-4696-a2c0-3daf12532e0b)
+
+
+# **Realizar Missão**
+- Página da realização da missão com a camera funcional
+![Imagem do WhatsApp de 2025-03-19 à(s) 16 49 35_bf10304f](https://github.com/user-attachments/assets/8e072823-15db-4902-ab1a-12e107762bbb)
+
+# Video
+
+Veja o vídeo de demonstração abaixo:
+
+[[![Assista ao vídeo]((https://youtube.com/shorts/zjMAg_NTHAA?feature=share))]](https://youtube.com/shorts/zjMAg_NTHAA?feature=share)
 
 
 ## Como Usar
