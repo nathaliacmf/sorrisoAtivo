@@ -1,6 +1,6 @@
 # Sorriso Ativo
 
-O Sorriso Ativo é uma funcionalidade para o nosso aplicativo de sistema de recompensas para a Odontoprev.
+O Sorriso Ativo é uma funcionalidade inovadora para o aplicativo da OdontoPrev , focada na gamificação e recompensas para incentivo a consultas preventivas e cuidados com a saúde bucal.
 
 ## Membros
 
@@ -16,7 +16,19 @@ O Sorriso Ativo é uma funcionalidade para o nosso aplicativo de sistema de reco
 
 ## Sobre
 
-Aqui você pode explicar mais sobre o projeto, o que ele resolve, e qual problema ele se propõe a solucionar.
+# Problema a Resolver
+
+Muitos pacientes seguem consultas preventivas e não seguem recomendações de cuidados com a saúde bucal. Isso resulta em problemas mais graves e custos elevados de tratamento. As principais razões para essa falta de engajamento incluem:
+
+- Percepção de que consultas preventivas são desnecessárias.
+- Falta de conhecimento sobre a importância da prevenção.
+- Dificuldade em seguir planos de cuidados recomendados.
+
+# A Solução
+O Sorriso Ativo propõe um sistema de recompensas para incentivar os pacientes a realizarem consultas e adotarem melhores hábitos de saúde bucal. A solução inclui:
+
+- Gamificação e recompensas para pacientes que completam consultas preventivas e seguem planos de cuidado (ex.: enviar uma foto escovando os dentes diariamente = 25 pontos).
+- Integração com o aplicativo da OdontoPrev para rastrear e promover o engajamento dos usuários.
 
 ## Telas
 
