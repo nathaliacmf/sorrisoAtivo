@@ -35,12 +35,14 @@ O Sorriso Ativo propõe um sistema de recompensas para incentivar os pacientes a
 
 # **Tela de Login**
 - Nesta tela teremos a conexão com o firebase 
-![Imagem do WhatsApp de 2025-03-19 à(s) 16 49 37_aae1bb08](https://github.com/user-attachments/assets/01ec0804-87d8-49e3-a4d1-a0a1be554ca6)
+![Login](https://github.com/user-attachments/assets/c8460fd1-c39b-40d5-93e6-3bd75bba7ea3)
+
 
 
 # **Tela de Cadastro**
 - Nesta tela teremos a conexão com o firebase
-![Imagem do WhatsApp de 2025-03-19 à(s) 16 49 36_cc13d1fa](https://github.com/user-attachments/assets/3f02b034-d5e3-40b2-ab9c-613e7d9743b5)
+![TelaCadastro](https://github.com/user-attachments/assets/a46bf03e-ecf6-474e-af19-277283699a27)
+
 
 
 # **Home**
@@ -48,27 +50,29 @@ O Sorriso Ativo propõe um sistema de recompensas para incentivar os pacientes a
 - Na area de "Serviços" são futuras telas que não foram executadas por agora
 - A carteirinha digital ira guardar as informações do usuario pelo login/cadastro
 - Acesso rapido temos a nossa ideia o "Sorriso Aivo" que é a ideia do nosso projeto
-![Imagem do WhatsApp de 2025-03-19 à(s) 16 49 36_209447ba](https://github.com/user-attachments/assets/718524f6-145b-4906-8919-99a906d347a9)
+![Home](https://github.com/user-attachments/assets/1caf1131-6bc1-496a-8bc3-70f1fcbcf18a)
 
 
 # **Sorriso Ativo**
 - Esta tela estara conectada com a API sobre os pontos e as missões para aparecer mais missões ou menos dependendo do usuário
-![Imagem do WhatsApp de 2025-03-19 à(s) 16 49 36_d53e49ea](https://github.com/user-attachments/assets/1a113fa4-d3e3-4e47-84e1-afa9bc15435c)
+![SorrisoAtivo](https://github.com/user-attachments/assets/93117228-0c4c-49aa-ad55-b2be359691dd)
 
 
 # **Missões**
 - Aqui mostrarias as missões que estão conectadas na API e os pontos de cada usuario que vai ser conectado com uma Api tambem
-![Imagem do WhatsApp de 2025-03-19 à(s) 16 49 35_6196a53d](https://github.com/user-attachments/assets/8aca9332-92e8-4a56-9873-8ae863b01d34)
+![Missões](https://github.com/user-attachments/assets/f8fe5a01-545c-40cd-bb6c-ff938e47137e)
+
 
 
 # **Trocar Pontos**
 - Ira mostrar os pontos que estão conectados com a API sobre cada usuario
-![Imagem do WhatsApp de 2025-03-19 à(s) 16 49 35_f829cd48](https://github.com/user-attachments/assets/05383b7c-2dc7-4696-a2c0-3daf12532e0b)
+![TrocarPontos](https://github.com/user-attachments/assets/15e345fb-9be4-44eb-92a7-659609aad957)
 
 
 # **Realizar Missão**
 - Página da realização da missão com a camera funcional
-![Imagem do WhatsApp de 2025-03-19 à(s) 16 49 35_bf10304f](https://github.com/user-attachments/assets/8e072823-15db-4902-ab1a-12e107762bbb)
+![RealizarMissão](https://github.com/user-attachments/assets/e99e1d9f-2818-498e-adb9-21964ff557dc)
+
 
 # Video
 
