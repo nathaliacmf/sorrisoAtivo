@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React from "react";
+=======
+import React, { useContext } from "react";
+>>>>>>> 7e82695763db2bb9f7a2ed02a7d03e188fe276de
 
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
@@ -95,4 +99,16 @@ const styles = StyleSheet.create({
         fontSize: 20,
         color: '#FFF',
     },
+<<<<<<< HEAD
   });
+=======
+    link:{
+        marginTop: 10,
+        marginBottom: 10,
+    },
+    linkText:{
+        color: '#171717',
+        justifyContent: 'center'
+    }
+  });
+>>>>>>> 7e82695763db2bb9f7a2ed02a7d03e188fe276de

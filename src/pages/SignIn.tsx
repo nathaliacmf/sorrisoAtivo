@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 import React from "react";
+=======
+import React from "react-native";
+
+
+>>>>>>> 7e82695763db2bb9f7a2ed02a7d03e188fe276de
 import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
@@ -95,4 +101,8 @@ const styles = StyleSheet.create({
         color: '#171717',
         justifyContent: 'center'
     }
+<<<<<<< HEAD
 });
+=======
+  });
+>>>>>>> 7e82695763db2bb9f7a2ed02a7d03e188fe276de
