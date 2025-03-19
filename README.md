@@ -16,7 +16,7 @@ O Sorriso Ativo é uma funcionalidade inovadora para o aplicativo da OdontoPrev 
 
 ## Sobre
 
--> Problema a Resolver
+**-> Problema a Resolver**
 
 Muitos pacientes seguem consultas preventivas e não seguem recomendações de cuidados com a saúde bucal. Isso resulta em problemas mais graves e custos elevados de tratamento. As principais razões para essa falta de engajamento incluem:
 
@@ -24,7 +24,7 @@ Muitos pacientes seguem consultas preventivas e não seguem recomendações de c
 - Falta de conhecimento sobre a importância da prevenção.
 - Dificuldade em seguir planos de cuidados recomendados.
 
--> A Solução
+**-> A Solução**
 O Sorriso Ativo propõe um sistema de recompensas para incentivar os pacientes a realizarem consultas e adotarem melhores hábitos de saúde bucal. A solução inclui:
 
 - Gamificação e recompensas para pacientes que completam consultas preventivas e seguem planos de cuidado (ex.: enviar uma foto escovando os dentes diariamente = 25 pontos).
