@@ -33,25 +33,25 @@ O Sorriso Ativo propõe um sistema de recompensas para incentivar os pacientes a
 ## Telas
 
 - **Tela de Login**
-  ![image](https://github.com/user-attachments/assets/749380f7-1a6c-4b6b-b672-60c30f2b0bee)
+![image](https://github.com/user-attachments/assets/749380f7-1a6c-4b6b-b672-60c30f2b0bee)
 
 - **Tela de Cadastro**
-  ![image](https://github.com/user-attachments/assets/4ef6ff1c-e5b1-4b8d-a310-815f9e869317)
+![image](https://github.com/user-attachments/assets/4ef6ff1c-e5b1-4b8d-a310-815f9e869317)
 
 - **Home**
-  ![image](https://github.com/user-attachments/assets/373e1d21-e8ba-46e6-9486-5c94aefe8214)
+![image](https://github.com/user-attachments/assets/373e1d21-e8ba-46e6-9486-5c94aefe8214)
 
 - **Sorriso Ativo**
-  ![image](https://github.com/user-attachments/assets/3d761f7d-2d46-482e-b507-3c15fa1cac02)
+![image](https://github.com/user-attachments/assets/3d761f7d-2d46-482e-b507-3c15fa1cac02)
 
 - **Missões**
-  ![image](https://github.com/user-attachments/assets/e4d2fa9b-eb14-4c5d-b60e-97eb205ae85d)
+![image](https://github.com/user-attachments/assets/e4d2fa9b-eb14-4c5d-b60e-97eb205ae85d)
 
 - **Trocar Pontos**
-  ![image](https://github.com/user-attachments/assets/7adcd3a6-a19a-4b3c-bea2-e84db6fbc982)
+![image](https://github.com/user-attachments/assets/7adcd3a6-a19a-4b3c-bea2-e84db6fbc982)
 
 - **Realizar Missão**
-  ![image](https://github.com/user-attachments/assets/1d08b134-4958-4726-8efa-9729e3ca7f1a)
+![image](https://github.com/user-attachments/assets/1d08b134-4958-4726-8efa-9729e3ca7f1a)
 
 
 ## Como Usar
